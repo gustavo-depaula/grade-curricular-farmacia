@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'Bitter'; /*a name to be used later*/
+    src: url('/fonts/Bitter-Regular.otf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'BitterBold'; /*a name to be used later*/
+    src: url('fonts/Bitter-Bold.otf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'BitterBoldItalic'; /*a name to be used later*/
+    src: url('/fonts/Bitter-Bold-Italic.otf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'BitterItalic'; /*a name to be used later*/
+    src: url('/fonts/Bitter-Italic.otf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'Ailerons'; /*a name to be used later*/
+    src: url('/fonts/Ailerons-Typeface.otf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'Panton'; /*a name to be used later*/
+    src: url('/fonts/Panton-LightCaps.otf'); /*URL to font*/
+}
+
+.display {
+	font-size: 400%;
+}
+
+.titulo {
+	line-height: 0%;
+	text-shadow: 3px;
+	font-family: 'Ailerons';
+}
+
+.creditos {
+	text-shadow: 3px;
+	font-family: 'Ailerons';
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.subtitulo {
+	line-height: 0%;
+	font-family: 'Ailerons';
+	font-size: 40%;
+}
+
+.col-titulo {
+	font-size: 200%;
+	font-family: 'Alcubierre';
+	text-align: left;
+}
+
+.btn {
+	font-family: 'Bitter';
+}
+
+.periodo {
+	margin: 10px;
+}

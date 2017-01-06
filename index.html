@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title> FARMÁCIA </title>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link href="css/push_assets/demo.css" rel="stylesheet">
+		<link href="css/push_assets/buttons.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/push_assets/bootstrap-theme.min.css">
+    </head>
+
+    <body style="background-color:#ffffff">
+        <h1 class="display" style="text-align:center; line-height: 50%">
+             <span class="titulo">Farmácia</span>
+             <small class="text-muted subtitulo"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ufes.alegre</small>
+        </h1>
+
+        <div class="periodo">
+            <span class="col-titulo">PRIMEIRO PERÍODO <br></span>
+            <button id="fundDeMat" type="button" class="btn btn-warning outline">fund. de<br>matemática</button>
+            <button id="Qui1"      type="button" class="btn btn-danger outline">química I</button>
+            <button id="QuiOrg1"   type="button" class="btn btn-danger outline">química<br>orgânica I</button>
+            <button id="MetCie"    type="button" class="btn btn-info outline">metodologia<br>científica</button>
+            <button id="ICF"       type="button" class="btn btn-info outline">icf</button>
+            <button id="SauCol"    type="button" class="btn btn-info outline">saúde coletiva</button>
+            <button id="CHG"       type="button" class="btn btn-success outline">chg</button>
+        </div>
+
+        <br>
+
+        <div class="periodo">
+            <span class="col-titulo">SEGUNDO PERÍODO <br></span>
+            <button id="QuiAna"     type="button" class="btn btn-danger outline">química<br>analítica</button>
+            <button id="QuiAnaExp"  type="button" class="btn btn-danger outline">qui analítica<br>experimental</button>
+            <button id="BioIno1"    type="button" class="btn btn-danger outline">bio-<br>inorgânica I</button>
+            <button id="QuiOrg2"    type="button" class="btn btn-danger outline">química<br>orgânica II</button>
+            <button id="BioQui1"    type="button" class="btn btn-info outline">bioquímica I</button>
+            <button id="BioFis"     type="button" class="btn btn-success outline">biofísica</button>
+            <button id="MicBioBas"  type="button" class="btn btn-success outline">microbiologia<br>básica</button>
+            <button id="AnaHumEmbr" type="button" class="btn btn-success outline">anatomia<br>hum e embr</button>
+        </div>
+
+        <br>
+
+        <div class="periodo">
+            <span class="col-titulo">TERCEIRO PERÍODO <br></span>
+            <button id="EstBas"  type="button" class="btn btn-warning outline">estatística<br>básica</button>
+            <button id="FisQui"  type="button" class="btn btn-danger outline">físico<br>química</button>
+            <button id="QuiOrg3" type="button" class="btn btn-danger outline">química<br>orgânica III</button>
+            <button id="FarBot"  type="button" class="btn btn-danger outline">farmaco<br>botânica</button>
+            <button id="FisHum"  type="button" class="btn btn-success outline">fisiologia<br>humana</button>
+            <button id="ParHum"  type="button" class="btn btn-info outline">parasitologia<br>humana</button>
+            <button id="ImuHum"  type="button" class="btn btn-success outline">imunologia<br>humana</button>
+            <button id="PatHum"  type="button" class="btn btn-success outline">patologia<br>humana</button>
+        </div>
+
+        <br>
+
+        <div class="periodo">
+            <span class="col-titulo">QUARTO PERÍODO <br></span>
+            <button id="PolSau"  type="button" class="btn btn-info outline">políticas<br>de saúde</button>
+            <button id="OpUnFa"  type="button" class="btn btn-info outline">operações<br>unitárias farm</button>
+            <button id="GesEmp"  type="button" class="btn btn-info outline">gestão emp<br>farmacêuticas</button>
+            <button id="FarTec1" type="button" class="btn btn-info outline">farmacotécnica<br>I</button>
+            <button id="BioQui2" type="button" class="btn btn-info outline">bioquímica<br>II</button>
+            <button id="DeoLeg"  type="button" class="btn btn-info outline">deontologia<br>e legislação</button>
+            <button id="Dispen"  type="button" class="btn btn-primary outline">dispensação<br>(estágio I)</button>
+            <button id="Opt1"    type="button" class="btn btn-info outline">optativa I</button>
+        </div>
+
+        <br>
+
+        <div class="periodo">
+            <span class="col-titulo">QUINTO PERÍODO <br></span>
+            <button id="Epi"     type="button" class="btn btn-info outline">epidemiologia</button>
+            <button id="BroCom"  type="button" class="btn btn-info outline">bromatologia<br>e comp alim</button>
+            <button id="FarTec2" type="button" class="btn btn-info outline">farmacotécnica<br>II</button>
+            <button id="FarLog1" type="button" class="btn btn-info outline">farmacologia<br>I</button>
+            <button id="BioQui3" type="button" class="btn btn-info outline">bioquímica<br>III</button>
+            <button id="Opt2"    type="button" class="btn btn-info outline">optativa II</button>
+            <button id="Opt3"    type="button" class="btn btn-info outline">optativa III</button>
+        </div>
+
+        <br>
+
+        <div class="periodo">
+            <span class="col-titulo">SEXTO PERÍODO <br></span>
+            <button id="FarGno"    type="button" class="btn btn-info outline">farmaco-<br>gnosia</button>
+            <button id="TecFar"    type="button" class="btn btn-info outline">tecnologia<br>farmacêutica</button>
+            <button id="Tox"       type="button" class="btn btn-info outline">toxicologia</button>
+            <button id="FarLog2"   type="button" class="btn btn-info outline">farmacologia<br>II</button>
+            <button id="BioQuiC"   type="button" class="btn btn-info outline">bioquímica<br>clínica</button>
+            <button id="MicBioAli" type="button" class="btn btn-info outline">microbiologia<br>de alimentos</button>
+        </div>
+
+        <br>
+
+        <div class="periodo">
+            <span class="col-titulo">SÉTIMO PERÍODO <br></span>
+            <button id="TecCos"  type="button" class="btn btn-info outline">tecnologia<br>comésticos</button>
+            <button id="HomPC"   type="button" class="btn btn-info outline">homeopatia</button>
+            <button id="FarHos"  type="button" class="btn btn-info outline">farmácia<br>hospitalar</button>
+            <button id="QuiFar"  type="button" class="btn btn-info outline">química<br>farmacêutica</button>
+            <button id="FarLog3" type="button" class="btn btn-info outline">farmacologia<br>III</button>
+            <button id="TCC"     type="button" class="btn btn-info outline">TCC</button>
+            <button id="ParCli"  type="button" class="btn btn-info outline">parasitologia<br>clínica</button>
+            <button id="Opt4"    type="button" class="btn btn-info outline">optativa IV</button>
+        </div>
+
+        <br>
+
+        <div class="periodo">
+            <span class="col-titulo">OITAVO PERÍODO <br></span>
+            <button id="ProFar"    type="button" class="btn btn-info outline">cq fq prod<br>farmacêuticos</button>
+            <button id="AssFar"    type="button" class="btn btn-info outline">assistência<br>farmacêutica</button>
+            <button id="HemCli"    type="button" class="btn btn-info outline">hematologia<br>clínica</button>
+            <button id="ImuCli"    type="button" class="btn btn-info outline">imunologia<br>clínica</button>
+            <button id="BioTecFar" type="button" class="btn btn-info outline">biotecnologia<br>farmacêutica</button>
+            <button id="Manipul"   type="button" class="btn btn-primary outline">manipulação<br>(estágio)</button>
+        </div>
+
+        <br>
+
+        <div class="periodo">
+            <span class="col-titulo">NONO PERÍODO <br></span>
+            <button id="HigAli"    type="button" class="btn btn-info outline">higiene e gq<br>alimentos</button>
+            <button id="MicProFar" type="button" class="btn btn-info outline">cq e microb<br>prod farm</button>
+            <button id="BioCli"    type="button" class="btn btn-info outline">biologia<br>clínica</button>
+            <button id="AnaCli"    type="button" class="btn btn-primary outline">análises<br>clínicas (estágio)</button>
+            <button id="Opt4"      type="button" class="btn btn-info outline">optativa V</button>
+        </div>
+
+        <br>
+
+        <div class="periodo">
+            <span class="col-titulo">DÉCIMO PERÍODO <br></span>
+            <button id=""       type="button" class="btn btn-primary outline">final I<br>(estágio)</button>
+            <button id=""       type="button" class="btn btn-primary outline">final II<br>(estágio)</button>
+            <button id=""       type="button" class="btn btn-primary outline">final III<br>(estágio)</button>
+            <button id="SemGra" type="button" class="btn btn-info outline">seminários<br>graduação</button>
+        </div>
+
+        <br>
+
+        <h1 class="display" style="text-align:center; line-height: 80%">
+             <span class="text-muted subtitulo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;feito, desenhado e programado<br></span>
+             <span class="creditos">por gustavo de paula</span>
+        </h1>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            //funções principais
+            $(document).ready(function() {
+                jQuery.fn.extend({
+                    toStd: function (){
+                        $(this).removeClass("outline");
+                        $(this).addClass("standard");
+                    }
+                });
+                jQuery.fn.extend({
+                    toOut: function (){
+                        $(this).removeClass("standard");
+                        $(this).addClass("outline");
+                    }
+                });
+
+                //SEGUNDO PERIODO
+                $("#QuiAna").hover(function( event ) {
+                    $('#Qui1').toStd();
+                }, function() {
+                // on mouseout
+                    $('#Qui1').toOut();
+                });
+
+                $("#QuiAnaExp").hover(function( event ) {
+                    $('#Qui1').toStd();
+                }, function() {
+                // on mouseout
+                    $('#Qui1').toOut();
+                });
+
+                $("#BioIno1").hover(function( event ) {
+                    $('#Qui1').toStd();
+                }, function() {
+                // on mouseout
+                    $('#Qui1').toOut();
+                });
+
+                $("#QuiOrg2").hover(function( event ) {
+                    $('#QuiOrg1').toStd();
+                }, function() {
+                // on mouseout
+                    $('#QuiOrg1').toOut();
+                });
+
+                $("#BioQui1").hover(function( event ) {
+                    $('#QuiOrg1').toStd();
+                }, function() {
+                // on mouseout
+                    $('#QuiOrg1').toOut();
+                });
+
+                $("#BioFis").hover(function( event ) {
+                    $('#CHG').toStd();
+                }, function() {
+                // on mouseout
+                    $('#CHG').toOut();
+                });
+
+                $("#MicBioBas").hover(function( event ) {
+                    $('#CHG').toStd();
+                }, function() {
+                // on mouseout
+                    $('#CHG').toOut();
+                });
+
+                //TERCEIRO PERIODO
+                var preReq = ['#fundDeMat'];
+                function loopEB(item) {
+                    $("#EstBas").hover(function( event ) {
+                        $(item).toStd();
+                    }, function() {
+                        // on mouseout
+                        $(item).toOut();
+                    });
+                }
+                preReq.forEach(loopEB);
+
+                var preReq = ['#fundDeMat', '#Qui1'];
+                function loopFQ(item) {
+                    $("#FisQui").hover(function( event ) {
+                        $(item).toStd();
+                    }, function() {
+                        // on mouseout
+                        $(item).toOut();
+                    });
+                }
+                preReq.forEach(loopFQ);
+
+                var preReq = ['#QuiOrg2'];
+                function loopQO(item) {
+                    $("#QuiOrg3").hover(function( event ) {
+                        $(item).toStd();
+                    }, function() {
+                        // on mouseout
+                        $(item).toOut();
+                    });
+                }
+                preReq.forEach(loopQO);
+
+                var preReq = ['#CHG'];
+                function loopPH(item) {
+                    $("#ParHum").hover(function( event ) {
+                        $(item).toStd();
+                    }, function() {
+                        // on mouseout
+                        $(item).toOut();
+                    });
+                }
+                preReq.forEach(loopPH);
+
+                var preReq = ['#CHG'];
+                function loopIH(item) {
+                    $("#ImuHum").hover(function( event ) {
+                        $(item).toStd();
+                    }, function() {
+                        // on mouseout
+                        $(item).toOut();
+                    });
+                }
+                preReq.forEach(loopIH);
+
+                var preReq = ['#AnaHumEmbr'];
+                function loopPatH(item) {
+                    $("#PatHum").hover(function( event ) {
+                        $(item).toStd();
+                    }, function() {
+                        // on mouseout
+                        $(item).toOut();
+                    });
+                }
+                preReq.forEach(loopPatH);
+
+                //4 periodo
+                var preReq = ['#FisQui'];
+                function loopOUF(item) {
+                    $("#OpUnFa").hover(function( event ) {
+                        $(item).toStd();
+                    }, function() {
+                        // on mouseout
+                        $(item).toOut();
+                    });
+                }
+                preReq.forEach(loopOUF);
+
+                var preReq = ['#QuiAna'];
+                function loopFT(item) {
+                    $("#FarTec1").hover(function( event ) {
+                        $(item).toStd();
+                    }, function() {
+                        // on mouseout
+                        $(item).toOut();
+                    });
+                }
+                preReq.forEach(loopFT);
+
+                $("#BioQui2").hover(function( event ) {
+                    $('#BioQui1').toStd();
+                }, function() {
+                // on mouseout
+                    $('#BioQui1').toOut();
+                });
+
+                $("#Dispen").hover(function( event ) {
+                    $('#SauCol').toStd();
+                }, function() {
+                // on mouseout
+                    $('#SauCol').toOut();
+                });
+
+                //5 periodo
+                $("#Epi").hover(function( event ) {
+                    $('#EstBas').toStd();
+                }, function() {
+                // on mouseout
+                    $('#EstBas').toOut();
+                });
+
+                $("#BroCom").hover(function( event ) {
+                    $('#QuiAna').toStd();
+                }, function() {
+                // on mouseout
+                    $('#QuiAna').toOut();
+                });
+
+                $("#FarTec2").hover(function( event ) {
+                    $('#FarTec1').toStd();
+                }, function() {
+                // on mouseout
+                    $('#FarTec1').toOut();
+                });
+
+                $("#FarLog1").hover(function( event ) {
+                    $('#BioQui2').toStd();
+                }, function() {
+                // on mouseout
+                    $('#BioQui2').toOut();
+                });
+
+                $("#BioQui3").hover(function( event ) {
+                    $('#CHG').toStd();
+                }, function() {
+                // on mouseout
+                    $('#CHG').toOut();
+                });
+
+                //6 periodo
+                $("#FarGno").hover(function( event ) {
+                    $('#FarBot').toStd();
+                }, function() {
+                // on mouseout
+                    $('#FarBot').toOut();
+                });
+
+                $("#TecFar").hover(function( event ) {
+                    $('#OpUnFa').toStd();
+                }, function() {
+                // on mouseout
+                    $('#OpUnFa').toOut();
+                });
+
+                $("#Tox").hover(function( event ) {
+                    $('#FarLog1').toStd();
+                }, function() {
+                // on mouseout
+                    $('#FarLog1').toOut();
+                });
+
+                $("#FarLog2").hover(function( event ) {
+                    $('#FarLog1').toStd();
+                }, function() {
+                // on mouseout
+                    $('#FarLog1').toOut();
+                });
+
+                $("#BioQuiC").hover(function( event ) {
+                    $('#BioQui2').toStd();
+                }, function() {
+                // on mouseout
+                    $('#BioQui2').toOut();
+                });
+
+                $("#MicBioAli").hover(function( event ) {
+                    $('#MicBioBas').toStd();
+                }, function() {
+                // on mouseout
+                    $('#MicBioBas').toOut();
+                });
+
+                //7 periodo
+                $("#TecCos").hover(function( event ) {
+                    $('#FarTec2').toStd();
+                }, function() {
+                // on mouseout
+                    $('#FarTec2').toOut();
+                });
+
+                $("#HomPC").hover(function( event ) {
+                    $('#FarTec2').toStd();
+                }, function() {
+                // on mouseout
+                    $('#FarTec2').toOut();
+                });
+
+                $("#FarHos").hover(function( event ) {
+                    $('#FarTec2').toStd();
+                }, function() {
+                // on mouseout
+                    $('#FarTec2').toOut();
+                });
+
+                $("#QuiFar").hover(function( event ) {
+                    $('#FarLog1').toStd();
+                }, function() {
+                // on mouseout
+                    $('#FarLog1').toOut();
+                });
+
+                $("#FarLog3").hover(function( event ) {
+                    $('#FarLog2').toStd();
+                }, function() {
+                // on mouseout
+                    $('#FarLog2').toOut();
+                });
+
+                $("#TCC").hover(function( event ) {
+                    $('#MetCie').toStd();
+                }, function() {
+                // on mouseout
+                    $('#MetCie').toOut();
+                });
+
+                $("#ParCli").hover(function( event ) {
+                    $('#ParHum').toStd();
+                }, function() {
+                // on mouseout
+                    $('#ParHum').toOut();
+                });
+
+                //8 periodo
+                $("#ProFar").hover(function( event ) {
+                    $('#QuiFar').toStd();
+                    $('#TecFar').toStd();
+                }, function() {
+                // on mouseout
+                    $('#QuiFar').toOut();
+                    $('#TecFar').toOut();
+                });
+
+                $("#AssFar").hover(function( event ) {
+                    $('#FarLog3').toStd();
+                }, function() {
+                // on mouseout
+                    $('#FarLog3').toOut();
+                });
+
+                $("#ImuCli").hover(function( event ) {
+                    $('#ImuHum').toStd();
+                }, function() {
+                // on mouseout
+                    $('#ImuHum').toOut();
+                });
+
+                $("#BioTecFar").hover(function( event ) {
+                    $('#BioQui3').toStd();
+                }, function() {
+                // on mouseout
+                    $('#BioQui3').toOut();
+                });
+
+                $("#Manipul").hover(function( event ) {
+                    $('#FarTec2').toStd();
+                }, function() {
+                // on mouseout
+                    $('#FarTec2').toOut();
+                });
+
+                //9 periodo
+
+                $("#HigAli").hover(function( event ) {
+                    $('#MicBioBas').toStd();
+                    $('#BroCom').toStd();
+                }, function() {
+                // on mouseout
+                    $('#MicBioBas').toOut();
+                    $('#BroCom').toOut();
+                });
+
+                $("#MicProFar").hover(function( event ) {
+                    $('#MicBioBas').toStd();
+                }, function() {
+                // on mouseout
+                    $('#MicBioBas').toOut();
+                });
+                $("#BioCli").hover(function( event ) {
+                    $('#MicBioBas').toStd();
+                    $('#PatHum').toStd();
+                }, function() {
+                // on mouseout
+                    $('#MicBioBas').toOut();
+                    $('#PatHum').toOut();
+                });
+
+                $("#AnaCli").hover(function( event ) {
+                    $('#BioQuiC').toStd();
+                    $('#ParCli').toStd();
+                    $('#HemCli').toStd();
+                    $('#ImuCli').toStd();
+                }, function() {
+                // on mouseout
+                    $('#BioQuiC').toOut();
+                    $('#ParCli').toOut();
+                    $('#HemCli').toOut();
+                    $('#ImuCli').toOut();
+                });
+
+                //10 periodo
+                $("#SemGra").hover(function( event ) {
+                    $('#TCC').toStd();
+                }, function() {
+                // on mouseout
+                    $('#TCC').toOut();
+                });
+
+
+            });
+
+        </script>
+    </body>
+</html>
